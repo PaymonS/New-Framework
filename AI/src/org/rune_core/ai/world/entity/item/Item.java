@@ -3,6 +3,13 @@ package org.rune_core.ai.world.entity.item;
 import org.rune_core.ai.world.entity.Entity;
 import org.rune_core.ai.world.entity.EntityType;
 
+/**
+ * An <code>Item</code> object represents an item available in the virtual
+ * in-game world.
+ * 
+ * @author Grabn_000
+ *
+ */
 public class Item extends Entity {
 	
 	/**

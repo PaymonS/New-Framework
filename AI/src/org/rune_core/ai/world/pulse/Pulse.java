@@ -1,4 +1,4 @@
-package org.rune_core.ai.world.util.pulse;
+package org.rune_core.ai.world.pulse;
 
 /**
  * A <code>Pulse</code> is an event that is scheduled to execute on a set cycle.

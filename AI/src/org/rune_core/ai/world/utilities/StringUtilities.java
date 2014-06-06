@@ -1,4 +1,4 @@
-package org.rune_core.ai.world.util;
+package org.rune_core.ai.world.utilities;
 
 /**
  * A utility class containing static methods useful for different kinds of

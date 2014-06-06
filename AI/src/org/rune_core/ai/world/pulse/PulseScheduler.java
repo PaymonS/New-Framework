@@ -1,4 +1,4 @@
-package org.rune_core.ai.world.util.pulse;
+package org.rune_core.ai.world.pulse;
 
 import java.util.HashSet;
 import java.util.Iterator;

@@ -1,5 +1,12 @@
 package org.rune_core.ai.world.entity.character.player;
 
+/**
+ * A class that holds the data/information that can be serialized for a 
+ * {@link Player} object.
+ * 
+ * @author Grabn_000
+ *
+ */
 public final class PlayerData {
 	
 	/**
@@ -12,9 +19,16 @@ public final class PlayerData {
 	 */
 	private String password;
 	
-	public PlayerData(final String username, final String password) {
+	/**
+	 * Constructs the <code>PlayerData</code> object.
+	 * 
+	 * @param username
+	 * 		A String representation of a {@link Player}'s name.
+	 * @param password
+	 * 		A String representation of a {@link Player}'s password.
+	 */
+	public PlayerData(final String username) {
 		this.username = username;
-		this.password = password;
 	}
 	
 	/**

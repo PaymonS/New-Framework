@@ -1,6 +1,8 @@
 package org.rune_core.ai.world;
 
-import org.rune_core.ai.world.util.pulse.PulseScheduler;
+import org.rune_core.ai.world.entity.character.player.Player;
+import org.rune_core.ai.world.entity.character.player.rw.PlayerFileManager;
+import org.rune_core.ai.world.pulse.PulseScheduler;
 
 /**
  * 
@@ -8,6 +10,11 @@ import org.rune_core.ai.world.util.pulse.PulseScheduler;
  *
  */
 public final class World implements Runnable {
+	
+	/**
+	 * The {@link PlayerFileManager} instance for managing {@link Player} saved games.
+	 */
+	private PlayerFileManager pfm = null;
 	
 	/**
 	 * Reference field holding the singleton instance of <code>World</code>.
@@ -19,6 +26,19 @@ public final class World implements Runnable {
 	 * singleton design pattern.
 	 */
 	private World() { }
+	
+	/**
+	 * Sets the {@link PlayerFileManager} to be used.
+	 * 
+	 * @param pfm
+	 * 		The {@link PlayerFileManager} implementation to be used.
+	 * @return
+	 * 		True if the {@link PlayerFileManager} was set.
+	 */
+	public boolean setPlayerFileManager(final PlayerFileManager pfm) {
+
+		return (this.pfm == null ? !(this.pfm = pfm).equals(null) : false);
+	}
 	
 	/**
 	 * Creates the game world with the defined assets.
@@ -47,6 +67,17 @@ public final class World implements Runnable {
 	public World startThreads() {
 		
 		return this;
+	}
+	
+	/**
+	 * Gets the {@link PlayerFileManager} instance.
+	 * 
+	 * @return
+	 * 		{@link #pfm}.
+	 */
+	public PlayerFileManager getPlayerFileManager() {
+		
+		return pfm;
 	}
 	
 	/**

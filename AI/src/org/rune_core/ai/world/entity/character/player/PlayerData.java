@@ -20,6 +20,11 @@ public final class PlayerData {
 	private String password;
 	
 	/**
+	 * A value representing the permission a {@link Player} has in the game world.
+	 */
+	private Permission permission;
+	
+	/**
 	 * Constructs the <code>PlayerData</code> object.
 	 * 
 	 * @param username
@@ -54,6 +59,17 @@ public final class PlayerData {
 	}
 	
 	/**
+	 * Gets the permission for the <code>PlayerDaya</code>.
+	 * 
+	 * @return
+	 * 		{@link #permission}.
+	 */
+	public Permission getPermission() {
+		
+		return permission;
+	}
+	
+	/**
 	 * Sets the username of the <code>PlayerData</code> object.
 	 * 
 	 * @param username
@@ -71,5 +87,15 @@ public final class PlayerData {
 	 */
 	public void setPassword(final String password) {
 		this.password = password;
+	}
+	
+	/**
+	 * Sets the {@link Permission} value of the <code>PlayerData</code> object.
+	 * 
+	 * @param permission
+	 * 		The {@link Permission} to set {@link #permission}.
+	 */
+	public void setPermission(final Permission permission) {
+		this.permission = permission;
 	}
 }

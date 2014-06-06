@@ -1,7 +1,7 @@
 package org.rune_core.ai.world;
 
 import org.rune_core.ai.world.entity.character.player.Player;
-import org.rune_core.ai.world.entity.character.player.rw.PlayerFileManager;
+import org.rune_core.ai.world.entity.character.player.io.PlayerFileManager;
 import org.rune_core.ai.world.pulse.PulseScheduler;
 
 /**

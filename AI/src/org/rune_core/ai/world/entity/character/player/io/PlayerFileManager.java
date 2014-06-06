@@ -1,4 +1,4 @@
-package org.rune_core.ai.world.entity.character.player.rw;
+package org.rune_core.ai.world.entity.character.player.io;
 
 import org.rune_core.ai.world.entity.character.player.Player;
 

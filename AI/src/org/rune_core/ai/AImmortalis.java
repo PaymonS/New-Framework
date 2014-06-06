@@ -2,7 +2,7 @@ package org.rune_core.ai;
 
 import org.rune_core.ai.world.World;
 import org.rune_core.ai.world.entity.character.player.Player;
-import org.rune_core.ai.world.entity.character.player.rw.JsonPlayerFileManager;
+import org.rune_core.ai.world.entity.character.player.io.JsonPlayerFileManager;
 
 /**
  * Holds the {@link #main(String...)}, the entry point into the application.
